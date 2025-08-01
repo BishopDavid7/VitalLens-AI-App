@@ -1,0 +1,47 @@
+# VitalLens-AI - SageMaker Training Notebook
+
+# Step 1: Install Required Libraries
+!pip install -q pandas scikit-learn joblib
+
+# Step 2: Import Libraries
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+import joblib
+
+# Step 3: Generate Sample Health Data
+np.random.seed(42)
+n_samples = 1000
+data = pd.DataFrame({
+    'age': np.random.randint(18, 90, size=n_samples),
+    'weight': np.random.uniform(45, 120, size=n_samples),
+    'body_temp': np.random.normal(36.8, 0.4, size=n_samples),
+    'bp_systolic': np.random.randint(90, 180, size=n_samples),
+    'cholesterol': np.random.randint(120, 280, size=n_samples)
+})
+
+# Step 4: Create Target Label (health risk: 1 = at risk, 0 = not at risk)
+data['at_risk'] = (
+    (data['bp_systolic'] > 140) | 
+    (data['cholesterol'] > 240) | 
+    (data['body_temp'] > 37.5)
+).astype(int)
+
+# Step 5: Train/Test Split
+X = data[['age', 'weight', 'body_temp', 'bp_systolic', 'cholesterol']]
+y = data['at_risk']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Step 6: Train Model
+clf = RandomForestClassifier(n_estimators=100, random_state=42)
+clf.fit(X_train, y_train)
+
+# Step 7: Evaluate Model
+y_pred = clf.predict(X_test)
+print("Classification Report:\n", classification_report(y_test, y_pred))
+
+# Step 8: Save Model
+joblib.dump(clf, 'health_model.pkl')
+print("✅ Model saved as 'health_model.pkl'")

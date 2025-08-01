@@ -1,0 +1,43 @@
+{
+  "api": {
+    "vitalLensAPI": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "RootUrl": "https://your-api-id.execute-api.region.amazonaws.com/dev",
+        "ApiName": "vitalLensAPI"
+      }
+    }
+  },
+  "function": {
+    "predictFunction": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "dependsOn": [],
+      "output": {
+        "Arn": "arn:aws:lambda:region:account-id:function:predictFunction"
+      }
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "Hosting",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "HostingBucketName": "vital-lens-app-hosting",
+        "Region": "your-region"
+      }
+    }
+  },
+  "auth": {
+    "vitalLensAuth": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "UserPoolId": "your-user-pool-id",
+        "AppClientID": "your-app-client-id"
+      }
+    }
+  }
+}
