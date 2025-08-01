@@ -1,8 +1,4 @@
-Here is a **detailed `README.md`** file for your **VitalLens-AI-App** GitHub project. It's designed for employers, recruiters, and developers. It includes a clear explanation, project structure, technologies, deployment instructions, and how to contribute — all in line with AWS and MIT best practices.
 
----
-
-```markdown
 # 🩺 VitalLens-AI-App
 
 **VitalLens-AI-App** is an intelligent health diagnostics tool that leverages machine learning to provide predictive insights into a user’s vital health metrics. By analyzing parameters such as age, body temperature, weight, blood pressure, and cholesterol, the app classifies whether a user is likely at risk of underlying health issues like hypertension, hypercholesterolemia, or abnormal body temperature conditions — all without invasive tests.
