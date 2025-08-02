@@ -79,75 +79,7 @@ VitalLens-AI-App/
 - Training Data: Synthetic dataset of 1000 patients
 - Notebook: `sagemaker/sagemaker_notebook.ipynb`
 
-
 ## 🌐 Live Demo (Coming Soon)
-
-> URL: https://vitallensai.app  
-> Deployed via AWS Amplify
-
-
-## ⚙️ Deployment (Beginner-Friendly Steps)
-
-### ✅ Prerequisites
-- GitHub account
-- AWS Free Tier account
-- Node.js and npm installed
-- AWS CLI configured
-- Python 3.8+
-
-### 📦 Step 1: Clone the Repo
-
-```bash
-git clone https://github.com/BishopDavid7/VitalLens-AI-App.git
-cd VitalLens-AI-App
-````
-
-### 🧠 Step 2: Train and Save the Model
-
-```bash
-cd backend/model
-python3 generate_health_model.py
-```
-
-### 🧪 Step 3: Test the Lambda Function Locally
-
-```bash
-cd ../lambda
-python3 predict.py  # Optional for local testing
-```
-
-### 🧰 Step 4: Deploy Backend Using AWS CloudFormation
-
-```bash
-cd ../../cloudformation
-aws cloudformation deploy \
-  --template-file template.yaml \
-  --stack-name vitallens-stack \
-  --capabilities CAPABILITY_IAM
-```
-
-### 🎨 Step 5: Setup Frontend with React
-
-```bash
-cd ../../react-app
-npm install
-npm start  # For local dev
-```
-
-### ☁️ Step 6: Deploy Frontend to AWS Amplify
-
-1. Commit code:
-
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
-
-2. Go to [AWS Amplify Console](https://console.aws.amazon.com/amplify)
-3. Connect your GitHub repo: `https://github.com/BishopDavid7/VitalLens-AI-App`
-4. Amplify will auto-deploy your frontend
-
 
 ## ✅ Advantages of VitalLens-AI-App
 
@@ -156,11 +88,6 @@ git push origin main
 * **Scalability**: Fully serverless architecture built with AWS Best Practices.
 * **Customizability**: Easily extend the model to include more biomarkers or wearables data.
 * **Educational**: Great for teaching ML + Cloud Computing integration.
-
-
-## 📜 License
-
-This project is licensed under the [MIT License](./LICENSE)
 
 
 ## 🤝 Contributing
