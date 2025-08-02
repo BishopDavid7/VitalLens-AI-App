@@ -101,7 +101,7 @@ VitalLens-AI-App/
 
 ## 🙋‍♂️ Contact
 
-Built by **[David Pascal](https://github.com/BishopDavid7)**
+Built by **[Pascal Esegemou Ekenya Fonjock](https://github.com/BishopDavid7)**
 📧 Email: [p.fonjock@gmail.com](mailto:p.fonjock@gmail.com)
 🌍 Location: Cameroon
 🧑‍💻 Portfolio: [pascal-awsdevops.com](https://pascal-awsdevops.com)
