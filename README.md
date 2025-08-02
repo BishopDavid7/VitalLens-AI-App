@@ -5,7 +5,6 @@
 
 This project is built with AWS Cloud technologies (Lambda, API Gateway, SageMaker, Amplify) using the AWS Free Tier, and integrates with a React-based frontend. It follows industry standards in cloud architecture and machine learning.
 
----
 
 ## ✅ Features
 
@@ -18,7 +17,6 @@ This project is built with AWS Cloud technologies (Lambda, API Gateway, SageMake
 - 📦 Easy to deploy and extend.
 - 👩‍⚕️ Empowers early health intervention and monitoring in underserved regions.
 
----
 
 ## 🚀 Tech Stack
 
@@ -30,11 +28,9 @@ This project is built with AWS Cloud technologies (Lambda, API Gateway, SageMake
 | DevOps       | GitHub, AWS CloudFormation, CI/CD via Amplify  |
 | Hosting      | AWS Amplify (Frontend), S3 (Model/Assets)      |
 
----
 
 ## 📂 Project Structure
 
-```
 
 VitalLens-AI-App/
 ├── amplify/
@@ -58,9 +54,6 @@ VitalLens-AI-App/
 ├── README.md
 └── .gitignore
 
-````
-
----
 
 ## 📈 How It Works
 
@@ -76,7 +69,6 @@ VitalLens-AI-App/
 4. **Cloud Hosting**  
    Frontend is hosted using AWS Amplify. Model and Lambda backend are deployed using CloudFormation.
 
----
 
 ## 🧠 Model Details
 
@@ -87,14 +79,12 @@ VitalLens-AI-App/
 - Training Data: Synthetic dataset of 1000 patients
 - Notebook: `sagemaker/sagemaker_notebook.ipynb`
 
----
 
 ## 🌐 Live Demo (Coming Soon)
 
 > URL: https://vitallensai.app  
 > Deployed via AWS Amplify
 
----
 
 ## ⚙️ Deployment (Beginner-Friendly Steps)
 
@@ -158,7 +148,6 @@ git push origin main
 3. Connect your GitHub repo: `https://github.com/BishopDavid7/VitalLens-AI-App`
 4. Amplify will auto-deploy your frontend
 
----
 
 ## ✅ Advantages of VitalLens-AI-App
 
@@ -168,13 +157,11 @@ git push origin main
 * **Customizability**: Easily extend the model to include more biomarkers or wearables data.
 * **Educational**: Great for teaching ML + Cloud Computing integration.
 
----
 
 ## 📜 License
 
 This project is licensed under the [MIT License](./LICENSE)
 
----
 
 ## 🤝 Contributing
 
@@ -184,7 +171,6 @@ This project is licensed under the [MIT License](./LICENSE)
 4. Push to the branch (`git push origin feature/new`)
 5. Open a Pull Request
 
----
 
 ## 🙋‍♂️ Contact
 
@@ -193,13 +179,7 @@ Built by **[David Pascal](https://github.com/BishopDavid7)**
 🌍 Location: Cameroon
 🧑‍💻 Portfolio: [pascal-awsdevops.com](https://pascal-awsdevops.com)
 
----
 
 ## ⭐ Star This Project
 
 If this project helped you, please give it a ⭐ on [GitHub](https://github.com/BishopDavid7/VitalLens-AI-App)!
-
-```
-
----
-
